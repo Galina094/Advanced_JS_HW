@@ -41,19 +41,20 @@ const getData = async (url) => {
 const btElement = document.querySelector('button');
 const divEl = document.querySelector('.content');
 
-btElement.addEventListener('click', async (e) => {
-    const fetchData = await getData(url);    
-    console.log(fetchData);
 
-    fetchData.forEach(element => {
-        divEl.insertAdjacentHTML('beforeend', 
-            `<div class="div__div"><e-mail>${element.email}</e-mail>
-             <p>${element.body}</p></div>`            
-        )              
-    });   
-});
+// btElement.addEventListener('click', async (e) => {
+//     const fetchData = await getData(url);    
+//     console.log(fetchData);
 
-// const fetchData = await getData(url);
-// console.log(fetchData);
+//     fetchData.forEach(element => {
+//         divEl.insertAdjacentHTML('beforeend', 
+//             `<div class="div__div"><e-mail>${element.email}</e-mail>
+//              <p>${element.body}</p></div>`            
+//         )              
+//     });   
+// });
+
+const fetchData = await getData(url);
+console.log(fetchData);
 
 // script.js:56 Uncaught SyntaxError: await is only valid in async functions and the top level bodies of modules (at script.js:56:19)
