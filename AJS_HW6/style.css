@@ -183,7 +183,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 6px;
-    margin-top: 95px;
+    margin-top: 95px;    
 }
 
 
@@ -253,6 +253,70 @@ body{
     padding-top: 18px;
 }
 
+.img_part_one{
+    position: relative;    
+}
+
+.img_part_one-hover{
+    background: rgba(58, 56, 56, 0.86);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;   
+}
+
+.img_part_one:hover .img_part_one-hover {
+	display: flex;
+    position: absolute;
+    top: 0;    
+}
+
+.btn_for_cart{
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 1px solid #ffffff;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.buyer{
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card-for-cart{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.h2_cart{
+    
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 24px;
+}
 
 
 
